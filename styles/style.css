@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  background-color: rgb(219, 223, 213);
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+/* Header con logo a la izquierda y barra de navegacion  */
+
+header {
+  display: grid;
+  grid-template-columns:repeat(12 , 1fr);
+  grid-template-rows: 8rem 12rem;
+}
+
+  nav {
+    grid-column: 4/11;
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
+  }
+
+  a:hover {
+    color: #c0c3c4;
+  }
+
+.logo {
+  grid-column: 1/3;
+  justify-self: center;
+  align-self: center;
+}
+
+  .logo img {
+    width: 6rem;
+    padding-top: 1rem;
+  }
+
+.menu {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  justify-content: space-around;
+  font-weight: bold;
+}
+
+  .menu li {
+    align-self: center;
+  }
+
+    .menu li a {
+      color: olive;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .menu li a:hover {
+      color: #c0c3c4;
+    }
+
+.titulo {
+  grid-row: 2/3;
+  grid-column: 3/11;
+  justify-self: center;
+  padding-top: 3rem;
+}
+
+  .titulo h1 {
+    font-size: 4rem;
+    color: olive;
+    font-weight: 100;
+    word-spacing: 3rem ;
+    letter-spacing: 2rem;
+  }
+
+/*  INDEX - PAGINA HOME */
+
+/* Banner Ceramica - imagen de fondo, ventajas y link a pagina con modelos */
+
+.bannerceramica {
+  background-image: url(/img/ceramica.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: repeat(3,1fr);
+  height: 250px;
+  border-radius: 1rem;
+  margin: 1rem 1rem;
+}
+
+  .bannerceramica__info {
+    grid-column: 1/13;
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+  }
+
+  .bannerceramica__ventajas {
+    grid-column: 2/6;
+    grid-row: 2/4;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+  }
+
+  .bannerceramica__boton {
+    grid-column: 11/13;
+    grid-row: 3/4;
+    background-color: ;
+  }
+
+    .bannerceramica__botoninfo {
+      font-size: 2rem;
+      font-weight: bolder;
+      color: white;
+    }
+
+/* Banner Vitrofusion -  imagen de fondo, ventajas  y link a pagina con modelos */
+
+.bannervidrio {
+  background-image: url(/img/vidrio1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: repeat(3,1fr);
+  height: 250px;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+  .bannervidrio__info {
+    grid-column: 1/13;
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+  }
+
+  .bannervidrio__ventajas {
+    grid-column: 2/6;
+    grid-row: 2/4;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+  }
+
+  .bannervidrio__boton {
+    grid-column: 11/13;
+    grid-row: 3/4;
+    background-color: ;
+  }
+
+    .bannervidrio__botoninfo {
+      font-size: 2rem;
+      font-weight: bolder;
+      color: white;
+    }
+
+/* Banner Tratamiento Termico- imagen de fondo,ventajas y link a pagina con modelos */
+
+.bannertratamiento {
+  background-image: url(/img/tratamiento6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: repeat(3,1fr);
+  height: 250px;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+  .bannertratamiento__info {
+    grid-column: 1/13;
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+  }
+
+  .bannertratamiento__ventajas {
+    grid-column: 2/6;
+    grid-row: 2/4;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+  }
+
+  .bannertratamiento__boton {
+    grid-column: 11/13;
+    grid-row: 3/4;
+    background-color: ;
+  }
+    .bannertratamiento__botoninfo {
+      font-size: 2rem;
+      font-weight: bolder;
+      color: white;
+    }
+    
+/* FIN INDEX - PAGINA INICIO */
+
+
+/* INICIO PAGINA CERAMICA */
+
+/* Titulo con imagenes de hornos y una descripcion a la derecha */
+
+.ceramica {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+}
+
+  .ceramica__titulo {
+    grid-column: 3/7;
+    color: olive;
+    justify-self: center;
+  }
+
+  .ceramica__img{
+    display: flex;
+    grid-column: 2/9;
+    width: 100%;
+    height: 90%;
+    
+  }
+
+    .ceramica__img img {
+      padding: 40px;
+    }
+
+  .ceramica__descripcion {
+    grid-column: 9/12 ;
+    padding-top: 40px;
+    text-align: justify;
+}
+
+/* Tabla con los modelos de ceramica y caracteristicas */
+
+.ceramica__tabla {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  j
+}
+
+  .ceramica__tabla table {
+    grid-column: 3/10;
+    background-color: rgb(216, 224, 204);
+    text-align: center;
+    font-size: 1.3rem;
+  }
+
+    .ceramica__tabla table th,td {
+      border: 2px solid black;
+      padding: 4px;
+    }
+
+/* FIN PAGINA CERAMICA */
+
+
+/* INICIO PAGINA VITROFUSION */
+
+.vidrio {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: 3, 1fr;
+}
+
+  .vidrio__titulo {
+    grid-column: 3/7;
+    color: olive;
+    justify-self: center;
+  }
+
+  .vidrio__img{
+    display: flex;
+    grid-column: 2/9;
+    width: 100%;
+    height: 80%;
+  }
+
+    .vidrio__img img {
+      padding: 40px;
+    }
+
+  .vidrio__descripcion {
+    grid-column: 9/12 ;
+    padding-top: 40px;
+    text-align: justify;
+}
+
+/* Tabla con los modelos de vitrofusion y caracteristicas */
+
+.vidrio__tabla {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+}
+
+  .vidrio__tabla table {
+    grid-column: 3/10;
+    background-color: rgb(216, 224, 204);
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+    .vidrio__tabla table th,td {
+      border: 2px solid black;
+      padding: 4px;
+    }
+
+/* Footer con redes sociales  y Copyright */
+
+footer{
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
+}
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(2,1fr);
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+    .footer__socials {
+      grid-column: 4/8;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 40px;
+    }
+
+      .footer__socials p {
+        font-weight: bolder;
+        font-size: 20px;
+      }
+
+      .footer__socials ul{
+        display: flex;
+        list-style: none;
+      }
+
+      .footer__socials ul li a {
+        padding-right: 20px;
+      }
+
+    .footer__copyrigth {
+      grid-column: 4/11;
+      font-size: 1rem;
+      font-weight: bold;
+    }
