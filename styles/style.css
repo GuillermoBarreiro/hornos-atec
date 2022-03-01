@@ -116,7 +116,6 @@ header {
   .bannerceramica__boton {
     grid-column: 11/13;
     grid-row: 3/4;
-    background-color: ;
   }
 
     .bannerceramica__botoninfo {
@@ -157,7 +156,6 @@ header {
   .bannervidrio__boton {
     grid-column: 11/13;
     grid-row: 3/4;
-    background-color: ;
   }
 
     .bannervidrio__botoninfo {
@@ -198,8 +196,8 @@ header {
   .bannertratamiento__boton {
     grid-column: 11/13;
     grid-row: 3/4;
-    background-color: ;
   }
+
     .bannertratamiento__botoninfo {
       font-size: 2rem;
       font-weight: bolder;
@@ -229,7 +227,6 @@ header {
     grid-column: 2/9;
     width: 100%;
     height: 90%;
-    
   }
 
     .ceramica__img img {
@@ -247,7 +244,6 @@ header {
 .ceramica__tabla {
   display: grid;
   grid-template-columns: repeat(12,1fr);
-  j
 }
 
   .ceramica__tabla table {
